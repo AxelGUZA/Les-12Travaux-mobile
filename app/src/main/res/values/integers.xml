@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="app_taille_texte_gras">20</integer>
+    <integer name="app_taille_texte_titre_gras">25</integer>
+    <integer name="app_taille_texte_light">19</integer>
+
+</resources>

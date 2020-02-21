@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <GridLayout
+                style="@style/carte.section1"
+                android:layout_width="match_parent"
+                android:layout_height="412dp"
+                android:columnCount="4"
+                android:rowCount="3">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/quebec_permis">
+
+                </ImageView>
+
+                <ImageView
+                    style="@style/carte.section1.image"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/image_permis">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/image_signature"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/signature_permis">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_row="1"
+                    android:layout_column="2"
+
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/fleurdelys_permis">
+
+                </ImageView>
+
+
+                <TextView
+                    android:id="@+id/permis_permisText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_marginTop="5pt"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/app_permis_FR"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/app_personne_num_FR"
+                    android:textSize="25dp"></TextView>
+
+                <TextView
+                    android:id="@+id/personne_nom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/app_personne_nom_FR"
+                    android:textSize="19dp"></TextView>
+
+                <TextView
+                    android:id="@+id/personne_prenom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/app_personne_prenom_FR"
+                    android:textSize="19dp"></TextView>
+
+                <TextView
+                    android:id="@+id/permis_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_marginTop="70dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/app_permis_date_FR"
+                    android:textColor="@color/color_permis_blue"
+                    android:textSize="19dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_personne_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_marginLeft="240dp"
+                    android:layout_marginTop="70dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/app_personne_date_FR"
+                    android:textSize="19dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_permis_adresse_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_marginTop="90dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/app_permis_adresse_1"
+                    android:textSize="19dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_permis_adresse_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_marginTop="110dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/app_permis_adresse_2"
+                    android:textSize="19dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_permis_adresse_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_marginTop="130dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/app_permis_adresse_3"
+                    android:textSize="19dp"></TextView>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:id="@+id/permis_sexe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/app_permis_sexe_FR"
+                    android:textSize="19dp"></TextView>
+
+                <TextView
+                    android:id="@+id/personne_sexe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:layout_marginLeft="50dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/app_personne_sexe_M_FR"
+                    android:textSize="19dp"></TextView>
+
+                <TextView
+                    android:id="@+id/permis_classe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/app_permis_classe_FR"
+                    android:textSize="19dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/app_personne_classe_FR"
+                    android:textSize="19dp"></TextView>
+
+
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:columnCount="2"
+                android:rowCount="6"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:gravity="center"
+                    android:text="Nom :" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:gravity="center"
+                    android:text="Prenom :" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_column="0"
+                    android:layout_row="3"
+                    android:gravity="center"
+                    android:text="Homme / Femme :" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_column="0"
+                    android:layout_row="4"
+                    android:gravity="center"
+                    android:text="Signature ? :" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_column="0"
+                    android:layout_row="5"
+                    android:gravity="center"
+                    android:text="Language ? :" />
+
+
+
+                <EditText
+                    android:id="@+id/nom_a_changer"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:layout_marginLeft="10dp">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/prenom_a_changer"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:layout_marginLeft="10dp">
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/bp_mise_a_jour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Mise a jour"></Button>
+
+
+
+
+
+                <Switch
+                    android:id="@+id/switch_Lang"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_row="5"
+                    android:layout_column="1" >
+
+                </Switch>
+
+                <Switch
+                    android:id="@+id/switch_h_f"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_row="3"
+                    android:layout_column="1" >
+
+                </Switch>
+
+
+                <CheckBox
+                    android:id="@+id/cb_signature"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_row="4"
+                    android:layout_column="1">
+
+                </CheckBox>
+
+
+            </GridLayout>
+
+
+
+
+
+
+            <Button
+                android:id="@+id/bp_page_web"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="40dp"
+                android:text="Page web"
+                android:autoLink="web"
+                android:clickable="true"
+                android:onClick="goToAEMI"></Button>
+
+            <Button
+                android:id="@+id/bp_Second_activiter"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="40dp"
+                android:text="Second_activiter"></Button>
+
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Aucun message" />
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
+

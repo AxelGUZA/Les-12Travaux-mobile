@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_preference"
+            android:title="@string/app_menu_pref"
+        ></item>
+
+    <item android:id="@+id/menu_autre"
+        android:title="@string/app_menu_autre"
+        ></item>
+
+</menu>

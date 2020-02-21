@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">12-Travaux</string>
+
+    <string name="app_notification_title">Les 12-Travaux</string>
+    <string name="app_notification_text">On a besoin de vous !!!</string>
+
+    <string name="app_menu_pref">Les 12-Travaux</string>
+    <string name="app_menu_autre">On a besoin de vous !!!</string>
+
+    <string name="app_permis_FR">Permis de conduire</string>
+    <string name="app_permis_date_FR">Date de naissance(A-M-J):</string>
+    <string name="app_permis_adresse_1">333, BOULEVARD JEAN-LESAGE</string>
+    <string name="app_permis_adresse_2">APP,432</string>
+    <string name="app_permis_adresse_3">QUÉBEC (QC) G1K 8J6</string>
+    <string name="app_permis_sexe_FR">Sexe:</string>
+    <string name="app_permis_classe_FR">Classe(s):</string>
+
+    <string name="app_personne_num_FR">L1531-171374-08</string>
+    <string name="app_personne_nom_FR">GUZA</string>
+    <string name="app_personne_prenom_FR">Axel</string>
+    <string name="app_personne_date_FR">1999-06-16</string>
+    <string name="app_personne_sexe_M_FR">M</string>
+    <string name="app_personne_sexe_F_FR">F</string>
+    <string name="app_personne_classe_FR">1 2 3 4A 4B 4C 5 6A</string>
+
+
+    <string name="app_permis_UK">driver s permit</string>
+    <string name="app_permis_date_UK">Date of Birth(A-M-J):</string>
+    <string name="app_permis_sexe_UK">Sex:</string>
+    <string name="app_permis_classe_UK">Class :</string>
+
+    <string name="app_personne_sexe_M_UK">M</string>
+    <string name="app_personne_sexe_W_UK">W</string>
+    <string name="title_activity_second">second</string>
+
+
+</resources>
